@@ -221,5 +221,14 @@ WHERE stockcode = '22233';
 HENCE, after after placing a arder the quantity is inventory is update.
 SAme can be done when , an order is cancelled.
 
+------- optimization
 
+EXPLAIN 
+SELECT * FROM invoiceXproductXcustomer
+WHERE customer_id = 100;
 
+Execution Time: 30.343 ms
+CREATE INDEX idx_customer_id ON invoiceXproductXcustomer(customer_id);
+Time: 0.788 ms
+
+--HENCE, after creating the index the query time is reduced from 30.343 ms to 0.788 ms.
