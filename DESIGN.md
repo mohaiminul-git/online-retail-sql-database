@@ -151,8 +151,7 @@ Current stock per product. The `CHECK` constraint makes it impossible for stock 
 New orders in the demo. The foreign key guarantees that only products that exist in `inventory` can be ordered.
 
 ### Relationships
-![Entity Relationship Diagram](docs/ERdiagram.png)
-
+/Users/mohaiminulislam/Desktop/project/project/ERdiagram.png
 ## Optimizations
 
 * **Unique indexes.** The `UNIQUE` constraints on `country_name`, `customerid`, `stockcode` and `invoiceno` create indexes automatically. They speed up the joins that look up ids during loading and enforce one row per entity.
