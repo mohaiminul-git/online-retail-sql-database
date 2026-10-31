@@ -151,7 +151,7 @@ Current stock per product. The `CHECK` constraint makes it impossible for stock 
 New orders in the demo. The foreign key guarantees that only products that exist in `inventory` can be ordered.
 
 ### Relationships
-![Entity Relationship Diagram](docs/ERdiagram.png)
+![Entity Relationship Diagram](ERdiagram.png)
 
 ## Optimizations
 
